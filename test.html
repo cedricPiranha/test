@@ -1,0 +1,44 @@
+<a href="">Lien1</a>
+<a href="">Lien2</a>
+<a href="">Lien3</a>
+<a href="">Lien4</a>
+
+<form>
+    <input type="password" id="test" value="salut">
+    <input type="password" id="test" value="salut">
+
+
+<div id="resultat">Il y a <span></span> liens dans la page</div>
+
+
+<style>
+    .nb
+    {
+        color:red;
+        font-weight: bold;
+        font-size: 40px;
+    }
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script>
+
+    var nb = $('a').length;
+
+    $('#resultat span').html(nb)
+    $('#resultat span').addClass('nb');
+
+    $('a:even').css('color','red')
+    $('a:odd').css('color','blue')
+    $(':password:even').css('background','blue')
+    $(':password:odd').css('background','red')
+
+
+
+
+     
+
+   
+</script>
