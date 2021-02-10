@@ -1,44 +1,25 @@
-<a href="">Lien1</a>
-<a href="">Lien2</a>
-<a href="">Lien3</a>
-<a href="">Lien4</a>
-
-<form>
-    <input type="password" id="test" value="salut">
-    <input type="password" id="test" value="salut">
-
-
-<div id="resultat">Il y a <span></span> liens dans la page</div>
-
-
-<style>
-    .nb
-    {
-        color:red;
-        font-weight: bold;
-        font-size: 40px;
-    }
-</style>
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-
-<script>
-
-    var nb = $('a').length;
-
-    $('#resultat span').html(nb)
-    $('#resultat span').addClass('nb');
-
-    $('a:even').css('color','red')
-    $('a:odd').css('color','blue')
-    $(':password:even').css('background','blue')
-    $(':password:odd').css('background','red')
-
-
-
-
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <style>
      
-
-   
-</script>
+ </style>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+ 
+ 
+</body>
+</html>
